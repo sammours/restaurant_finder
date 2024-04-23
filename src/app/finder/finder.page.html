@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="bar bar-header bar-positive">Find a restaurant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <app-finding-restaurant *ngIf="loading"></app-finding-restaurant>
+  <ng-container *ngIf="!loading && restaurants && restaurants.length > 0">
+    <ng-container *ngFor="let restaurant of restaurants">
+      <app-restaurant-card [favs]="favs" [restaurant]="restaurant" (favClick)="getFavourites()"></app-restaurant-card>
+    </ng-container>
+  </ng-container>
+
+</ion-content>

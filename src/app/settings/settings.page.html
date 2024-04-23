@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br />
+  <br />
+  <div class="fin-container" *ngIf="settings && settings.length > 0">
+    <form action="">
+      <div class="form-group">
+        <ion-item>
+          <ion-label position="floating">Max Distance</ion-label>
+          <ion-input id="distance" placeholder="distance" name="distance" [(ngModel)]="settings[0].value"></ion-input>
+        </ion-item>  
+      </div>
+      <div class="form-group">
+        <ion-item>
+          <ion-label position="floating">Sort Type *</ion-label>
+          <ion-select name="sortType" placeholder="Select One" [(ngModel)]="settings[1].value">
+            <ion-select-option value="1">Top rated</ion-select-option>
+            <ion-select-option value="2">Nearest</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+      <ion-button (click)="save()" color="primary" expand="block">Save</ion-button>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "restaurant_finder",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,58 @@
+<ion-card>
+        
+  <ion-card-content>
+    <ion-row>
+      <ion-col size="4">
+        <img [src]="restaurant.photo" class="restaurant-photo" (click)="openPhoto(restaurant.photo)" />
+      </ion-col>
+
+      <ion-col>
+          <ion-card-title class="card-title">
+            <ion-icon class="float-right" [color]="isFav() ? 'yellow' : ''" (click)="toggleToFavourite()" name="bookmark"></ion-icon>
+            {{restaurant.name}}
+            <br />
+            <ion-icon [color]="rating >= 1 ? 'yellow' : ''" name="star"></ion-icon>
+            <ion-icon [color]="rating >= 2 ? 'yellow' : ''" name="star"></ion-icon>
+            <ion-icon [color]="rating >= 3 ? 'yellow' : ''" name="star"></ion-icon>
+            <ion-icon [color]="rating >= 4 ? 'yellow' : ''" name="star"></ion-icon>
+            <ion-icon [color]="rating >= 5 ? 'yellow' : ''" name="star"></ion-icon>
+
+          </ion-card-title>
+          <ion-icon name='pizza'></ion-icon>
+          <div class="restaurant-type">{{restaurant.cuisineType}}</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <address>
+            <strong>{{restaurant.neighborhood}}</strong><br />
+            <span (click)="openMap()">
+              {{restaurant.street}}<br />
+              {{restaurant.postalCode}}, {{restaurant.city}}, {{restaurant.country}}
+            </span>
+          </address>
+      
+        </ion-col>
+      </ion-row>
+
+    
+  </ion-card-content>
+
+  <ion-item class="top-border">
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="button-clear" fill="clear" (click)="showReviews()">
+          Reviews &nbsp;&nbsp;
+          <ion-badge item-end>{{restaurant.reviews ? restaurant.reviews.length : 0}}</ion-badge>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="float-right" fill="clear" (click)="showAlert()">
+          Opening Hours
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-item>
+
+</ion-card>

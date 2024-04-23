@@ -1,0 +1,73 @@
+{
+  "_from": "uk.co.workingedge.phonegap.plugin.launchnavigator@5.0.4",
+  "_id": "uk.co.workingedge.phonegap.plugin.launchnavigator@5.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-DMRb3kV9dUEDD2baJhUgLg4qDMQ21kdwkOuPvMzOnWfpIUe2WviVCH3BjJOoXVR+RrxxBsT5FtSDkC1yt8Sa4A==",
+  "_location": "/uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "uk.co.workingedge.phonegap.plugin.launchnavigator@5.0.4",
+    "name": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "escapedName": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "rawSpec": "5.0.4",
+    "saveSpec": null,
+    "fetchSpec": "5.0.4"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uk.co.workingedge.phonegap.plugin.launchnavigator/-/uk.co.workingedge.phonegap.plugin.launchnavigator-5.0.4.tgz",
+  "_shasum": "fa3ebb98ee46c0f70124cc64a44409f68a51f59b",
+  "_spec": "uk.co.workingedge.phonegap.plugin.launchnavigator@5.0.4",
+  "_where": "C:\\Samy Sammour\\Weiterbildung\\Master\\Third Semester B Ja.2019\\Mobile Standards, Interfaces and Applications\\restaurant_finder",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "bugs": {
+    "url": "https://github.com/dpa99c/phonegap-launch-navigator/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "cordova_name": "Launch Navigator",
+  "deprecated": false,
+  "description": "Cordova/Phonegap plugin to navigate to a destination using native navigation apps on Android, iOS, and Windows",
+  "engines": {
+    "cordovaDependencies": {
+      "4.0.0": {
+        "cordova": ">=7.1.0",
+        "cordova-android": ">=6.3.0",
+        "cordova-ios": ">=4.3.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/dpa99c/phonegap-launch-navigator#readme",
+  "issue": "https://github.com/dpa99c/phonegap-launch-navigator/issues",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "phonegap",
+    "ios",
+    "android",
+    "windows",
+    "navigation",
+    "navigator"
+  ],
+  "license": "MIT",
+  "name": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/phonegap-launch-navigator.git"
+  },
+  "types": "./uk.co.workingedge.phonegap.plugin.launchnavigator.d.ts",
+  "version": "5.0.4"
+}

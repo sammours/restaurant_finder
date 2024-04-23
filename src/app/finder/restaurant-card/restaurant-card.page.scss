@@ -1,0 +1,51 @@
+@import './../../../global.scss';
+
+.restaurant-photo {
+    width: 100px;
+    height: auto;
+}
+
+.card-title { 
+    font-size: 16px;
+}
+
+.item-native {
+    padding: 0 !important;
+}
+
+address {
+    font-size: 13px;
+}
+
+.restaurant-type {
+    font-size: 13px;
+    margin-top: -22px;
+    margin-left: 20px;
+}
+
+ion-item {
+    .item-native {
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-padding-start: 0;
+        padding-inline-start: 0;
+        -webkit-padding-end: 0;
+        padding-inline-end: 0;
+    }
+    ion-row {
+        width: 100%;
+    }
+}
+
+.top-border {
+    --inner-border-width: 0;
+    border-top: 1px solid rgba(162, 164, 171, .2);
+}
+
+ion-icon[name="star"] {
+    font-size: 18px;
+}
+
+ion-icon[name="bookmark"] {
+    font-size: 20px;
+}

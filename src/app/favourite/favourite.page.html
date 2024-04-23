@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favourites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fin-container">
+    <ng-container *ngIf="favs && favs.length > 0; else empty">
+      <ul class="list-group list-group-flush">
+        <ng-container *ngFor="let fav of favs">
+          <li class="list-group-item">
+            <span (click)="showRestaurant(fav.restaurantId)">{{fav.name}}</span>
+            <button type="button" class="close float-right" aria-label="Close" (click)="deleteFromFavourite(fav.restaurantId)">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </li>
+        </ng-container>
+      </ul>
+    </ng-container>
+    <ng-template #empty>
+      <h4>
+        You didn't add any restaurants to favourites
+      </h4>
+    </ng-template>
+  </div>
+</ion-content>

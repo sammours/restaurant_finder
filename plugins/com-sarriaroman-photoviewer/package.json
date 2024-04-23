@@ -1,0 +1,63 @@
+{
+  "_from": "com-sarriaroman-photoviewer",
+  "_id": "com-sarriaroman-photoviewer@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-DVlxSVm0FCRgHKCImIHO2yxeLne6Mq9CO/dR2pK4L7+PUW6TKZm1FBIkHI8JeUSxFbjDME80A+BLkqTSgMG3wA==",
+  "_location": "/com-sarriaroman-photoviewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "com-sarriaroman-photoviewer",
+    "name": "com-sarriaroman-photoviewer",
+    "escapedName": "com-sarriaroman-photoviewer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/com-sarriaroman-photoviewer/-/com-sarriaroman-photoviewer-1.2.1.tgz",
+  "_shasum": "4639ef42ec33f9c3d4c1afa7e32006d23e4263d8",
+  "_spec": "com-sarriaroman-photoviewer",
+  "_where": "C:\\Samy Sammour\\Weiterbildung\\Master\\Third Semester B Ja.2019\\Mobile Standards, Interfaces and Applications\\restaurant_finder",
+  "author": {
+    "name": "Román A. Sarria"
+  },
+  "bugs": {
+    "url": "https://github.com/sarriaroman/photoviewer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com-sarriaroman-photoviewer",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "This plugin is intended to show a picture from an URL into a Photo Viewer with zoom features.",
+  "devDependencies": {
+    "typescript": "3.2.2"
+  },
+  "homepage": "https://github.com/sarriaroman/photoviewer#readme",
+  "keywords": [
+    "cordova",
+    "photoviewer",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "com-sarriaroman-photoviewer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarriaroman/photoviewer.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "version": "1.2.1"
+}

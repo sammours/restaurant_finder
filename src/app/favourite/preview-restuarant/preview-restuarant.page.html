@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="bar bar-header bar-positive">Favourite Restaurant</ion-title>
+    <button (click)="returnToFav()" class="back-button">
+      <ion-icon name="arrow-back" class="arrow-icon"></ion-icon>
+      <div>Back</div>
+    </button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="fin-container">
+    <ion-card *ngIf="restaurant && restaurant.id; else notfound">
+
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="4">
+            <img [src]="restaurant.photo" class="restaurant-photo" (click)="openPhoto(restaurant.photo)" />
+          </ion-col>
+          <ion-col>
+            <ion-card-title class="card-title">
+              {{restaurant.name}}
+            </ion-card-title>
+            <ion-icon name='pizza'></ion-icon>
+            <div class="restaurant-type">{{restaurant.cuisineType}}</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <address>
+              <strong>{{restaurant.neighborhood}}</strong><br />
+              {{restaurant.street}}<br />
+              {{restaurant.postalCode}}, {{restaurant.city}}, {{restaurant.country}}
+            </address>
+
+          </ion-col>
+        </ion-row>
+
+
+      </ion-card-content>
+
+      <ion-item class="top-border">
+        <ion-row>
+          <ion-col>
+            <ion-button class="float-right" fill="clear" (click)="showAlert()">
+              Opening Hours
+            </ion-button>
+          </ion-col>
+        </ion-row>
+    
+      </ion-item>
+
+    </ion-card>
+    <ng-template #notfound>
+      <h4>
+        This restaurant doesn't exist
+      </h4>
+    </ng-template>
+
+  </div>
+</ion-content>

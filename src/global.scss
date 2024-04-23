@@ -1,0 +1,78 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import './theme/variables.scss';
+
+.float-right {
+    float: right;
+}
+
+.button-clear {
+    background: transparent;
+}
+
+.alert-message.sc-ion-alert-ios {
+    font-size: 11pt;
+    text-align: left;
+}
+
+.alert-head.sc-ion-alert-ios {
+    border-bottom: 1px solid rgba(162, 164, 171, .2);
+    margin-bottom: 15px;
+}
+
+.fin-container {
+    margin: auto 16px;
+}
+
+hr {
+    border-bottom: 1px solid rgba(162, 164, 171, .2) !important;
+
+} 
+
+.sc-ion-card-ios-h{
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,.12);
+}
+
+.text-center {
+    text-align: center;
+}
+
+ion-toolbar {
+    --background: rgb(56, 128, 255);
+    color: #fff;
+}
+
+.back-button  {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-top: 5px;
+    div {
+        margin-top: -25px;
+        margin-left: 30px;
+    }
+}
+
+.arrow-icon {
+    font-size: 30px;
+    margin-left: -30px;
+}
+
+.ion-color-yellow {
+	--ion-color-base: gold;
+	--ion-color-base-rgb: 255, 255, 0;
+	--ion-color-contrast: gold;
+	--ion-color-contrast-rgb: 0, 0, 0;
+	--ion-color-shade: gold;
+	--ion-color-tint: gold;
+}
